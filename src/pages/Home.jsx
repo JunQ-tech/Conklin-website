@@ -185,38 +185,36 @@ const Home = () => {
       <section className="py-32 bg-gray-50 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-umc-red/5 rounded-full blur-[100px]"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
-            <div className="max-w-2xl text-center md:text-left">
-              <span className="text-umc-red font-black tracking-[0.2em] text-xs uppercase mb-4 block">Weekly Update</span>
-              <h2 className="text-5xl md:text-6xl font-black text-gray-900 mb-6 tracking-tight">Worship Bulletin</h2>
-              <p className="text-xl text-gray-600 font-medium">Follow along with our service. Digital version updated every week.</p>
-            </div>
-            <a href="/bulletin-outside.png" download className="bg-gray-900 text-white px-8 py-4 rounded-2xl font-bold hover:bg-black transition-colors flex items-center gap-3">
-               <FileText size={20} />
-               Download PDF
+          <div className="text-center mb-20">
+            <span className="text-umc-red font-black tracking-[0.2em] text-xs uppercase mb-4 block">Weekly Update</span>
+            <h2 className="text-5xl md:text-7xl font-black text-gray-900 mb-6 tracking-tight">Worship Bulletin</h2>
+            <p className="text-xl text-gray-600 font-medium max-w-2xl mx-auto mb-10">Follow along with our service. Digital version updated every week.</p>
+            <a href="/bulletin-outside.png" download className="inline-flex bg-gray-900 text-white px-10 py-5 rounded-2xl font-bold hover:bg-black transition-all hover:scale-105 shadow-xl items-center gap-3">
+               <FileText size={22} />
+               Download PDF Version
             </a>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div className="group bg-white p-3 rounded-[3rem] shadow-2xl shadow-black/5 hover:shadow-black/10 transition-all duration-500 hover:-translate-y-2">
-              <div className="rounded-[2.5rem] overflow-hidden border border-gray-100 bg-gray-50 aspect-[3/4] relative">
+          <div className="max-w-4xl mx-auto space-y-16">
+            <div className="group bg-white p-4 sm:p-6 rounded-[3rem] shadow-2xl shadow-black/5 hover:shadow-black/10 transition-all duration-500 hover:-translate-y-2">
+              <div className="rounded-[2.2rem] overflow-hidden border border-gray-100 bg-gray-50 relative">
                 <img 
                   src="/bulletin-outside.png" 
                   alt="Worship Bulletin Outside" 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-auto transition-transform duration-700 group-hover:scale-[1.02]"
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500"></div>
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500 pointer-events-none"></div>
               </div>
             </div>
 
-            <div className="group bg-white p-3 rounded-[3rem] shadow-2xl shadow-black/5 hover:shadow-black/10 transition-all duration-500 hover:-translate-y-2 lg:mt-12">
-              <div className="rounded-[2.5rem] overflow-hidden border border-gray-100 bg-gray-50 aspect-[3/4] relative">
+            <div className="group bg-white p-4 sm:p-6 rounded-[3rem] shadow-2xl shadow-black/5 hover:shadow-black/10 transition-all duration-500 hover:-translate-y-2">
+              <div className="rounded-[2.2rem] overflow-hidden border border-gray-100 bg-gray-50 relative">
                 <img 
                   src="/bulletin-inside.png" 
                   alt="Worship Bulletin Inside" 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-auto transition-transform duration-700 group-hover:scale-[1.02]"
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500"></div>
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500 pointer-events-none"></div>
               </div>
             </div>
           </div>

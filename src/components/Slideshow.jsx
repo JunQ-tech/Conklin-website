@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import slide1 from '../assets/slide1.jpg';
 import slide3 from '../assets/slide3.jpg';
-import slide5 from '../assets/slide5.jpg';
 import slide6 from '../assets/slide6.png';
 import slide7 from '../assets/slide7.jpg';
 import slide8 from '../assets/slide8.jpg';
@@ -11,7 +10,7 @@ import slide11 from '../assets/slide11.jpg';
 
 const Slideshow = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const slides = [slide1, slide8, slide10, slide7, slide9, slide11, slide3, slide5, slide6];
+  const slides = [slide1, slide8, slide10, slide7, slide9, slide11, slide3, slide6];
 
   useEffect(() => {
     const timer = setInterval(() => {

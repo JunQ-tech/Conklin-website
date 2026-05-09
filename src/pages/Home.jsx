@@ -31,21 +31,7 @@ const Home = () => {
           <p className="text-xl sm:text-2xl md:text-3xl text-gray-200 max-w-3xl mx-auto font-light drop-shadow-lg leading-relaxed mb-12 opacity-90">
             A vibrant community of faith, hope, and love in the heart of South River.
           </p>
-          
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <Link 
-              to="/ministries" 
-              className="px-10 py-5 bg-umc-red text-white rounded-full font-bold text-lg hover:bg-red-700 transition-all shadow-xl hover:shadow-umc-red/40 hover:-translate-y-1 w-full sm:w-auto"
-            >
-              Get Started
-            </Link>
-            <a 
-              href="#welcome" 
-              className="px-10 py-5 bg-white/10 text-white backdrop-blur-md border border-white/20 rounded-full font-bold text-lg hover:bg-white/20 transition-all w-full sm:w-auto"
-            >
-              Learn More
-            </a>
-          </div>
+
         </div>
 
         {/* Scroll Indicator */}

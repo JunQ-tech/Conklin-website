@@ -26,7 +26,7 @@ const Home = () => {
             Welcome Home
           </span>
           <h1 className="text-5xl sm:text-6xl md:text-8xl font-extrabold text-white mb-4 sm:mb-6 leading-[1.1] tracking-tighter drop-shadow-2xl animate-slide-up-fade" style={{ animationDelay: '0.4s' }}>
-            Together!
+            You Belong Here
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto font-light drop-shadow-md leading-relaxed hidden sm:block animate-slide-up-fade" style={{ animationDelay: '0.6s' }}>
             A community of faith, hope, and love in South River. Join us this Sunday morning at 9:00 AM as we worship together.

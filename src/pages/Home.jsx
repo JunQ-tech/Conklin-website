@@ -175,7 +175,7 @@ const Home = () => {
             <span className="text-umc-red font-black tracking-[0.2em] text-xs uppercase mb-4 block">Weekly Update</span>
             <h2 className="text-5xl md:text-7xl font-black text-gray-900 mb-6 tracking-tight">Worship Bulletin</h2>
             <p className="text-xl text-gray-600 font-medium max-w-2xl mx-auto mb-10">Follow along with our service. Digital version updated every week.</p>
-            <a href="/bulletin-outside.jpg" download className="inline-flex bg-gray-900 text-white px-10 py-5 rounded-2xl font-bold hover:bg-black transition-all hover:scale-105 shadow-xl items-center gap-3">
+            <a href="/bulletin-0510.pdf" download="Conklin-Bulletin-May10.pdf" className="inline-flex bg-gray-900 text-white px-10 py-5 rounded-2xl font-bold hover:bg-black transition-all hover:scale-105 shadow-xl items-center gap-3">
                <FileText size={22} />
                Download PDF Version
             </a>

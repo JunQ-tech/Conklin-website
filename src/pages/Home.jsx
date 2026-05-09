@@ -61,7 +61,7 @@ const Home = () => {
             </div>
             <div>
               <h3 className="font-bold text-base md:text-lg text-gray-900 mb-0.5 md:mb-1">God's Closet</h3>
-              <p className="text-gray-500 text-xs md:text-sm font-medium leading-tight">Thu/Sat 10am</p>
+              <p className="text-gray-500 text-xs md:text-sm font-medium leading-tight">Thu/Sat 10AM-1PM</p>
             </div>
           </div>
           <div className="flex flex-col gap-2 md:gap-3 items-center md:items-start text-center md:text-left border-t md:border-t-0 md:border-l border-gray-100 pt-6 md:pt-0 md:pl-8 border-l md:border-l pl-4 md:pl-8">

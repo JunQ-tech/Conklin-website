@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-umc-red: #E4002B;
+  --color-umc-dark: #1C1917;
+}
+
+@layer base {
+  body {
+    background-color: #ffffff;
+    color: #1f2937;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer utilities {
+  @keyframes hero-reveal {
+    0% {
+      clip-path: inset(25% 25% 25% 25% round 30px);
+      transform: scale(1.15);
+    }
+    100% {
+      clip-path: inset(0% 0% 0% 0% round 0px);
+      transform: scale(1);
+    }
+  }
+
+  @keyframes slide-up-fade {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-hero-reveal {
+    animation: hero-reveal 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .animate-slide-up-fade {
+    animation: slide-up-fade 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+  }
+}

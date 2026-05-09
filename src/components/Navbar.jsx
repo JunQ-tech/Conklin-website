@@ -45,32 +45,71 @@ const Navbar = ({ forceSolid = false }) => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
-            <button onClick={() => setIsOpen(!isOpen)} className="text-gray-900 transition-colors">
-              {isOpen ? <X size={32} /> : <Menu size={32} />}
+            <button 
+              onClick={() => setIsOpen(!isOpen)} 
+              className="text-gray-900 p-2 rounded-full hover:bg-gray-100 transition-colors focus:outline-none"
+              aria-label="Toggle menu"
+            >
+              {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-white shadow-xl absolute top-full left-0 w-full border-t border-gray-100">
-          <div className="px-4 pt-2 pb-6 space-y-1">
-            {navLinks.map((link) => (
+      {/* Mobile Menu Overlay */}
+      <div 
+        className={`md:hidden fixed inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-300 z-[-1] ${
+          isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+        }`}
+        onClick={() => setIsOpen(false)}
+      />
+
+      {/* Mobile Menu Sidebar */}
+      <div 
+        className={`md:hidden fixed top-0 right-0 h-full w-[80%] max-w-sm bg-white shadow-2xl transition-transform duration-300 ease-out z-50 overflow-y-auto ${
+          isOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        <div className="flex flex-col h-full">
+          <div className="flex items-center justify-between p-6 border-b border-gray-100">
+            <UmcLogo className="h-10 w-auto" />
+            <button 
+              onClick={() => setIsOpen(false)}
+              className="p-2 rounded-full hover:bg-gray-100 transition-colors"
+            >
+              <X size={24} />
+            </button>
+          </div>
+          
+          <div className="flex-1 px-6 py-8 space-y-2">
+            {navLinks.map((link, index) => (
               <Link 
                 key={link.name} 
                 to={link.href} 
                 onClick={() => setIsOpen(false)}
-                className={`block px-3 py-3 text-base font-medium rounded-md hover:bg-gray-50 hover:text-umc-red ${
-                  location.pathname === link.href ? 'text-umc-red bg-red-50' : 'text-gray-900'
+                className={`flex items-center px-4 py-4 text-lg font-bold rounded-2xl transition-all ${
+                  location.pathname === link.href 
+                    ? 'bg-red-50 text-umc-red' 
+                    : 'text-gray-800 hover:bg-gray-50 hover:text-umc-red'
                 }`}
+                style={{ 
+                  animationDelay: `${index * 50}ms`,
+                  animation: isOpen ? 'slide-up-fade 0.5s ease-out forwards' : 'none',
+                  opacity: 0
+                }}
               >
                 {link.name}
               </Link>
             ))}
           </div>
+
+          <div className="p-6 border-t border-gray-100 bg-gray-50">
+            <p className="text-sm text-gray-500 font-medium text-center">
+              © 2026 Conklin UMC
+            </p>
+          </div>
         </div>
-      )}
+      </div>
     </nav>
   );
 };

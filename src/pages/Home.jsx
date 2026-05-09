@@ -22,55 +22,55 @@ const Home = () => {
 
         {/* Content */}
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-          <span className="inline-block py-1.5 px-4 rounded-full bg-white/20 text-white backdrop-blur-md border border-white/30 text-xs sm:text-sm font-semibold tracking-widest mb-4 sm:mb-6 uppercase shadow-sm">
+          <span className="inline-block py-1.5 px-4 rounded-full bg-white/20 text-white backdrop-blur-md border border-white/30 text-xs sm:text-sm font-semibold tracking-widest mb-4 sm:mb-6 uppercase shadow-sm animate-slide-up-fade" style={{ animationDelay: '0.2s' }}>
             Welcome Home
           </span>
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white mb-4 sm:mb-6 leading-tight tracking-tight drop-shadow-lg">
+          <h1 className="text-5xl sm:text-6xl md:text-8xl font-extrabold text-white mb-4 sm:mb-6 leading-[1.1] tracking-tighter drop-shadow-2xl animate-slide-up-fade" style={{ animationDelay: '0.4s' }}>
             Together!
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto font-light drop-shadow-md leading-relaxed hidden sm:block">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto font-light drop-shadow-md leading-relaxed hidden sm:block animate-slide-up-fade" style={{ animationDelay: '0.6s' }}>
             A community of faith, hope, and love in South River. Join us this Sunday morning at 9:00 AM as we worship together.
           </p>
         </div>
       </section>
 
       {/* Info Bar Section */}
-      <section className="bg-white py-12 border-b border-gray-100 relative z-20 -mt-8 mx-4 md:mx-auto max-w-7xl rounded-2xl shadow-xl">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 px-8">
-          <div className="flex flex-col gap-3">
-            <div className="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-umc-red shrink-0">
-              <Clock size={24} strokeWidth={2} />
+      <section className="bg-white py-8 md:py-12 border-b border-gray-100 relative z-20 -mt-8 md:-mt-12 mx-4 md:mx-auto max-w-7xl rounded-2xl shadow-xl">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-4 px-4 md:px-8">
+          <div className="flex flex-col gap-2 md:gap-3 items-center md:items-start text-center md:text-left">
+            <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-red-50 flex items-center justify-center text-umc-red shrink-0">
+              <Clock size={20} md={24} strokeWidth={2} />
             </div>
             <div>
-              <h3 className="font-bold text-lg text-gray-900 mb-1">Sunday Worship</h3>
-              <p className="text-gray-500 font-medium">9:00 AM</p>
+              <h3 className="font-bold text-base md:text-lg text-gray-900 mb-0.5 md:mb-1">Worship</h3>
+              <p className="text-gray-500 text-sm md:text-base font-medium">9:00 AM</p>
             </div>
           </div>
-          <div className="flex flex-col gap-3 border-t md:border-t-0 md:border-l border-gray-100 pt-6 md:pt-0 md:pl-8">
-            <div className="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-umc-red shrink-0">
-              <BookOpen size={24} strokeWidth={2} />
+          <div className="flex flex-col gap-2 md:gap-3 items-center md:items-start text-center md:text-left border-l md:border-l-0 border-gray-100 pl-4 md:pl-0">
+            <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-red-50 flex items-center justify-center text-umc-red shrink-0">
+              <BookOpen size={20} md={24} strokeWidth={2} />
             </div>
             <div>
-              <h3 className="font-bold text-lg text-gray-900 mb-1">Bible Study</h3>
-              <p className="text-gray-500 font-medium">Tuesday at 7:00 PM</p>
+              <h3 className="font-bold text-base md:text-lg text-gray-900 mb-0.5 md:mb-1">Bible Study</h3>
+              <p className="text-gray-500 text-sm md:text-base font-medium">Tue 7:00 PM</p>
             </div>
           </div>
-          <div className="flex flex-col gap-3 border-t md:border-t-0 md:border-l border-gray-100 pt-6 md:pt-0 md:pl-8">
-            <div className="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-umc-red shrink-0">
-              <ShoppingBag size={24} strokeWidth={2} />
+          <div className="flex flex-col gap-2 md:gap-3 items-center md:items-start text-center md:text-left border-t md:border-t-0 md:border-l border-gray-100 pt-6 md:pt-0 md:pl-8 col-span-1">
+            <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-red-50 flex items-center justify-center text-umc-red shrink-0">
+              <ShoppingBag size={20} md={24} strokeWidth={2} />
             </div>
             <div>
-              <h3 className="font-bold text-lg text-gray-900 mb-1">God's Closet</h3>
-              <p className="text-gray-500 font-medium text-sm leading-tight">Thu 10am-1pm<br/>1st & 3rd Sat 10am-1pm</p>
+              <h3 className="font-bold text-base md:text-lg text-gray-900 mb-0.5 md:mb-1">God's Closet</h3>
+              <p className="text-gray-500 text-xs md:text-sm font-medium leading-tight">Thu/Sat 10am</p>
             </div>
           </div>
-          <div className="flex flex-col gap-3 border-t md:border-t-0 md:border-l border-gray-100 pt-6 md:pt-0 md:pl-8">
-            <div className="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-umc-red shrink-0">
-              <MapPin size={24} strokeWidth={2} />
+          <div className="flex flex-col gap-2 md:gap-3 items-center md:items-start text-center md:text-left border-t md:border-t-0 md:border-l border-gray-100 pt-6 md:pt-0 md:pl-8 border-l md:border-l pl-4 md:pl-8">
+            <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-red-50 flex items-center justify-center text-umc-red shrink-0">
+              <MapPin size={20} md={24} strokeWidth={2} />
             </div>
             <div>
-              <h3 className="font-bold text-lg text-gray-900 mb-1">South River, NJ</h3>
-              <p className="text-gray-500 font-medium">82 Main Street</p>
+              <h3 className="font-bold text-base md:text-lg text-gray-900 mb-0.5 md:mb-1">South River</h3>
+              <p className="text-gray-500 text-xs md:text-sm font-medium">82 Main St</p>
             </div>
           </div>
         </div>

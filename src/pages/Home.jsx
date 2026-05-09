@@ -26,7 +26,7 @@ const Home = () => {
             Welcome Home
           </span>
           <h1 className="text-6xl sm:text-7xl md:text-9xl font-black text-white mb-8 leading-[0.9] tracking-tighter drop-shadow-2xl">
-            You Belong <br/> <span className="text-gradient">Here</span>
+            You Belong <br/> Here
           </h1>
           <p className="text-xl sm:text-2xl md:text-3xl text-gray-200 max-w-3xl mx-auto font-light drop-shadow-lg leading-relaxed mb-12 opacity-90">
             A vibrant community of faith, hope, and love in the heart of South River.

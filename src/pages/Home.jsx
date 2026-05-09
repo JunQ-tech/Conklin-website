@@ -26,7 +26,7 @@ const Home = () => {
             Welcome Home
           </span>
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white mb-4 sm:mb-6 leading-tight tracking-tight drop-shadow-lg">
-            Journey Together!
+            We Journey Together
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto font-light drop-shadow-md leading-relaxed hidden sm:block">
             A community of faith, hope, and love in South River. Join us this Sunday morning at 9:00 AM as we worship together.

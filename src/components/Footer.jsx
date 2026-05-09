@@ -21,6 +21,12 @@ const Footer = () => {
                 <span>Follow us on Facebook</span>
               </a>
             </div>
+            <div className="mt-8 pt-8 border-t border-gray-100/50">
+              <p className="text-[10px] font-black text-gray-400 uppercase tracking-[0.2em] mb-3">Scan to visit on mobile</p>
+              <div className="bg-white p-2 rounded-xl border border-gray-100 inline-block shadow-sm">
+                <img src="/qrcode-conklin.png" alt="Website QR Code" className="w-20 h-20" />
+              </div>
+            </div>
           </div>
 
           {/* Quick Links */}

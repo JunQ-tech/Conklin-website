@@ -189,7 +189,7 @@ const Home = () => {
             <span className="text-umc-red font-black tracking-[0.2em] text-xs uppercase mb-4 block">Weekly Update</span>
             <h2 className="text-5xl md:text-7xl font-black text-gray-900 mb-6 tracking-tight">Worship Bulletin</h2>
             <p className="text-xl text-gray-600 font-medium max-w-2xl mx-auto mb-10">Follow along with our service. Digital version updated every week.</p>
-            <a href="/bulletin-outside.png" download className="inline-flex bg-gray-900 text-white px-10 py-5 rounded-2xl font-bold hover:bg-black transition-all hover:scale-105 shadow-xl items-center gap-3">
+            <a href="/bulletin-outside.jpg" download className="inline-flex bg-gray-900 text-white px-10 py-5 rounded-2xl font-bold hover:bg-black transition-all hover:scale-105 shadow-xl items-center gap-3">
                <FileText size={22} />
                Download PDF Version
             </a>
@@ -199,7 +199,7 @@ const Home = () => {
             <div className="group bg-white p-4 sm:p-6 rounded-[3rem] shadow-2xl shadow-black/5 hover:shadow-black/10 transition-all duration-500 hover:-translate-y-2">
               <div className="rounded-[2.2rem] overflow-hidden border border-gray-100 bg-gray-50 relative">
                 <img 
-                  src="/bulletin-outside.png" 
+                  src="/bulletin-outside.jpg" 
                   alt="Worship Bulletin Outside" 
                   className="w-full h-auto transition-transform duration-700 group-hover:scale-[1.02]"
                 />
@@ -210,7 +210,7 @@ const Home = () => {
             <div className="group bg-white p-4 sm:p-6 rounded-[3rem] shadow-2xl shadow-black/5 hover:shadow-black/10 transition-all duration-500 hover:-translate-y-2">
               <div className="rounded-[2.2rem] overflow-hidden border border-gray-100 bg-gray-50 relative">
                 <img 
-                  src="/bulletin-inside.png" 
+                  src="/bulletin-inside.jpg" 
                   alt="Worship Bulletin Inside" 
                   className="w-full h-auto transition-transform duration-700 group-hover:scale-[1.02]"
                 />

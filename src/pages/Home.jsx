@@ -168,13 +168,13 @@ const Home = () => {
       </section>
 
       {/* Worship Bulletin Section */}
-      <section className="py-32 bg-gray-50 relative overflow-hidden">
+      <section className="py-16 bg-gray-50 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-umc-red/5 rounded-full blur-[100px]"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-20">
+          <div className="text-center mb-6">
             <span className="text-umc-red font-black tracking-[0.2em] text-xs uppercase mb-4 block">Weekly Update</span>
             <h2 className="text-5xl md:text-7xl font-black text-gray-900 mb-6 tracking-tight">Worship Bulletin</h2>
-            <p className="text-xl text-gray-600 font-medium max-w-2xl mx-auto mb-10">Follow along with our service. Digital version updated every week.</p>
+            <p className="text-xl text-gray-600 font-medium max-w-2xl mx-auto mb-4">Follow along with our service. Digital version updated every week.</p>
             <a href="/bulletin-0510.pdf" download="Conklin-Bulletin-May10.pdf" className="inline-flex bg-gray-900 text-white px-5 py-2.5 rounded-xl text-sm font-medium hover:bg-black transition-all hover:scale-105 shadow-md items-center gap-2">
                <FileText size={15} />
                Download PDF Version

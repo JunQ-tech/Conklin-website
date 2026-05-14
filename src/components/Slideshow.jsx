@@ -10,7 +10,7 @@ import slide11 from '../assets/slide11.jpg';
 
 const Slideshow = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const slides = [slide1, slide8, slide10, slide7, slide9, slide11, slide3, slide6];
+  const slides = [slide8, slide10, slide7, slide9, slide11, slide1, slide3, slide6];
 
   useEffect(() => {
     const timer = setInterval(() => {

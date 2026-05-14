@@ -73,13 +73,13 @@ const GodsCloset = () => {
           </div>
 
           {/* Facebook Feed Section */}
-          <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 flex flex-col h-full min-h-[600px] lg:min-h-[800px]">
-            <div className="flex-grow flex justify-center items-start w-full bg-gray-50 rounded-xl overflow-hidden mb-6">
+          <div className="bg-white rounded-3xl shadow-xl border border-gray-100 flex flex-col h-full min-h-[800px] lg:min-h-[1000px] overflow-hidden">
+            <div className="flex-grow flex justify-center items-start w-full bg-white rounded-xl overflow-hidden">
               <iframe 
-                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fconklingodscloset&tabs=timeline&width=500&height=800&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" 
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fconklingodscloset&tabs=timeline&width=500&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" 
                 width="100%" 
-                height="100%" 
-                style={{ border: 'none', overflow: 'hidden', minHeight: '800px', maxWidth: '100%' }} 
+                height="1000" 
+                style={{ border: 'none', overflow: 'hidden', minHeight: '1000px', maxWidth: '100%' }} 
                 scrolling="no" 
                 frameBorder="0" 
                 allowFullScreen={true} 

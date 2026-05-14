@@ -16,15 +16,17 @@ const Staff = () => {
 
         {/* Pastor Jun - Featured */}
         <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 mb-16">
-          <div className="md:flex">
-            <div className="md:w-2/5 bg-gray-200 relative aspect-[4/5] md:aspect-auto">
-              <img 
-                src={pastorJun} 
-                alt="Pastor JunGyu Park" 
-                className="w-full h-full object-cover object-top"
-              />
+          <div className="md:flex items-stretch">
+            <div className="md:w-1/3 bg-gray-50 flex items-center justify-center p-4 md:p-8">
+              <div className="w-full max-w-[280px] aspect-[3/4] rounded-2xl overflow-hidden shadow-lg">
+                <img 
+                  src={pastorJun} 
+                  alt="Pastor JunGyu Park" 
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
             </div>
-            <div className="md:w-3/5 p-8 md:p-14 flex flex-col justify-center">
+            <div className="md:w-2/3 p-8 md:p-14 flex flex-col justify-center">
               <div className="mb-8">
                 <span className="text-umc-red font-bold tracking-widest text-sm uppercase">Pastor</span>
                 <h2 className="text-4xl font-extrabold text-gray-900 mt-2 leading-tight">JunGyu "Jun" Park</h2>

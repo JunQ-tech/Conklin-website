@@ -171,36 +171,28 @@ const Home = () => {
       <section className="py-16 bg-gray-50 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-umc-red/5 rounded-full blur-[100px]"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-6">
+          <div className="text-center mb-10">
             <span className="text-umc-red font-black tracking-[0.2em] text-xs uppercase mb-4 block">Weekly Update</span>
             <h2 className="text-5xl md:text-7xl font-black text-gray-900 mb-6 tracking-tight">Worship Bulletin</h2>
-            <p className="text-xl text-gray-600 font-medium max-w-2xl mx-auto mb-4">Follow along with our service. Digital version updated every week.</p>
-            <a href="/bulletin-0510.pdf" download="Conklin-Bulletin-May10.pdf" className="inline-flex bg-gray-900 text-white px-5 py-2.5 rounded-xl text-sm font-medium hover:bg-black transition-all hover:scale-105 shadow-md items-center gap-2">
-               <FileText size={15} />
+            <p className="text-xl text-gray-600 font-medium max-w-2xl mx-auto mb-6">Follow along with our service. Digital version updated every week.</p>
+            <a 
+              href="/0517%20Conklin%20Sunday%20Bulletin.pdf" 
+              download="Conklin-Bulletin-May17.pdf" 
+              className="inline-flex bg-gray-900 text-white px-6 py-3 rounded-xl text-sm font-medium hover:bg-black transition-all hover:scale-105 shadow-md items-center gap-2"
+            >
+               <FileText size={16} />
                Download PDF Version
             </a>
           </div>
 
-          <div className="max-w-4xl mx-auto space-y-16">
-            <div className="group bg-white p-4 sm:p-6 rounded-[3rem] shadow-2xl shadow-black/5 hover:shadow-black/10 transition-all duration-500 hover:-translate-y-2">
-              <div className="rounded-[2.2rem] overflow-hidden border border-gray-100 bg-gray-50 relative">
-                <img 
-                  src="/bulletin-outside.jpg" 
-                  alt="Worship Bulletin Outside" 
-                  className="w-full h-auto transition-transform duration-700 group-hover:scale-[1.02]"
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white p-4 sm:p-6 rounded-[3rem] shadow-2xl shadow-black/5 hover:shadow-black/10 transition-all duration-500">
+              <div className="rounded-[2.2rem] overflow-hidden border border-gray-100 bg-gray-50 h-[800px] relative">
+                <iframe 
+                  src="/0517%20Conklin%20Sunday%20Bulletin.pdf" 
+                  className="w-full h-full border-none" 
+                  title="Worship Bulletin PDF"
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500 pointer-events-none"></div>
-              </div>
-            </div>
-
-            <div className="group bg-white p-4 sm:p-6 rounded-[3rem] shadow-2xl shadow-black/5 hover:shadow-black/10 transition-all duration-500 hover:-translate-y-2">
-              <div className="rounded-[2.2rem] overflow-hidden border border-gray-100 bg-gray-50 relative">
-                <img 
-                  src="/bulletin-inside.jpg" 
-                  alt="Worship Bulletin Inside" 
-                  className="w-full h-auto transition-transform duration-700 group-hover:scale-[1.02]"
-                />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500 pointer-events-none"></div>
               </div>
             </div>
           </div>

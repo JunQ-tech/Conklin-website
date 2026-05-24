@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Slideshow from '../components/Slideshow';
 import heroBg from '../assets/church-main.jpg';
-import { Clock, MapPin, BookOpen, ShoppingBag, FileText, Heart } from 'lucide-react';
+import { Clock, MapPin, BookOpen, ShoppingBag, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
-  const [bulletinView, setBulletinView] = useState('page1');
   return (
     <div className="min-h-screen bg-white flex flex-col font-sans selection:bg-umc-red selection:text-white">
       <Navbar />
@@ -176,74 +175,28 @@ const Home = () => {
             <span className="text-umc-red font-black tracking-[0.2em] text-xs uppercase mb-4 block">Weekly Update</span>
             <h2 className="text-5xl md:text-7xl font-black text-gray-900 mb-6 tracking-tight">Worship Bulletin</h2>
             <p className="text-xl text-gray-600 font-medium max-w-2xl mx-auto mb-6">Follow along with our service. Digital version updated every week.</p>
-            <a 
-              href="/0524%20Conklin%20Sunday%20Bulletin.pdf" 
-              download="Conklin-Bulletin-May24.pdf" 
-              className="inline-flex bg-gray-900 text-white px-6 py-3 rounded-xl text-sm font-medium hover:bg-black transition-all hover:scale-105 shadow-md items-center gap-2"
-            >
-               <FileText size={16} />
-               Download PDF Version
-            </a>
           </div>
 
-          <div className="max-w-4xl mx-auto">
-            {/* View Toggle Tabs */}
-            <div className="flex justify-center gap-4 mb-8">
-              <button
-                onClick={() => setBulletinView('page1')}
-                className={`px-6 py-2.5 rounded-full text-sm font-black tracking-wide transition-all duration-300 ${
-                  bulletinView === 'page1'
-                    ? 'bg-umc-red text-white shadow-lg shadow-umc-red/20'
-                    : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200'
-                }`}
-              >
-                Outside Cover
-              </button>
-              <button
-                onClick={() => setBulletinView('page2')}
-                className={`px-6 py-2.5 rounded-full text-sm font-black tracking-wide transition-all duration-300 ${
-                  bulletinView === 'page2'
-                    ? 'bg-umc-red text-white shadow-lg shadow-umc-red/20'
-                    : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200'
-                }`}
-              >
-                Inside Service
-              </button>
-              <button
-                onClick={() => setBulletinView('pdf')}
-                className={`px-6 py-2.5 rounded-full text-sm font-black tracking-wide transition-all duration-300 ${
-                  bulletinView === 'pdf'
-                    ? 'bg-umc-red text-white shadow-lg shadow-umc-red/20'
-                    : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200'
-                }`}
-              >
-                PDF View
-              </button>
+          <div className="max-w-4xl mx-auto space-y-16">
+            <div className="group bg-white p-4 sm:p-6 rounded-[3rem] shadow-2xl shadow-black/5 hover:shadow-black/10 transition-all duration-500 hover:-translate-y-2">
+              <div className="rounded-[2.2rem] overflow-hidden border border-gray-100 bg-gray-50 relative">
+                <img 
+                  src="/bulletins/0524/bulletin-0524-page1.jpg" 
+                  alt="Worship Bulletin Outside Cover" 
+                  className="w-full h-auto transition-transform duration-700 group-hover:scale-[1.02]"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500 pointer-events-none"></div>
+              </div>
             </div>
 
-            <div className="bg-white p-4 sm:p-6 rounded-[3rem] shadow-2xl shadow-black/5 hover:shadow-black/10 transition-all duration-500">
-              <div className="rounded-[2.2rem] overflow-hidden border border-gray-100 bg-gray-50 h-[600px] md:h-[800px] relative flex items-center justify-center">
-                {bulletinView === 'page1' && (
-                  <img
-                    src="/bulletins/0524/bulletin-0524-page1.jpg"
-                    alt="Worship Bulletin Outside Cover"
-                    className="w-full h-full object-contain p-2"
-                  />
-                )}
-                {bulletinView === 'page2' && (
-                  <img
-                    src="/bulletins/0524/bulletin-0524-page2.jpg"
-                    alt="Worship Bulletin Inside Service"
-                    className="w-full h-full object-contain p-2"
-                  />
-                )}
-                {bulletinView === 'pdf' && (
-                  <iframe 
-                    src="/0524%20Conklin%20Sunday%20Bulletin.pdf" 
-                    className="w-full h-full border-none" 
-                    title="Worship Bulletin PDF"
-                  />
-                )}
+            <div className="group bg-white p-4 sm:p-6 rounded-[3rem] shadow-2xl shadow-black/5 hover:shadow-black/10 transition-all duration-500 hover:-translate-y-2">
+              <div className="rounded-[2.2rem] overflow-hidden border border-gray-100 bg-gray-50 relative">
+                <img 
+                  src="/bulletins/0524/bulletin-0524-page2.jpg" 
+                  alt="Worship Bulletin Inside Service" 
+                  className="w-full h-auto transition-transform duration-700 group-hover:scale-[1.02]"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500 pointer-events-none"></div>
               </div>
             </div>
           </div>

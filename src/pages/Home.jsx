@@ -181,7 +181,7 @@ const Home = () => {
             <div className="group bg-white p-4 sm:p-6 rounded-[3rem] shadow-2xl shadow-black/5 hover:shadow-black/10 transition-all duration-500 hover:-translate-y-2">
               <div className="rounded-[2.2rem] overflow-hidden border border-gray-100 bg-gray-50 relative">
                 <img 
-                  src="/bulletins/0524/bulletin-0524-page1.jpg" 
+                  src="/bulletins/0607/bulletin-0607-page1.jpg" 
                   alt="Worship Bulletin Outside Cover" 
                   className="w-full h-auto transition-transform duration-700 group-hover:scale-[1.02]"
                 />
@@ -192,7 +192,7 @@ const Home = () => {
             <div className="group bg-white p-4 sm:p-6 rounded-[3rem] shadow-2xl shadow-black/5 hover:shadow-black/10 transition-all duration-500 hover:-translate-y-2">
               <div className="rounded-[2.2rem] overflow-hidden border border-gray-100 bg-gray-50 relative">
                 <img 
-                  src="/bulletins/0524/bulletin-0524-page2.jpg" 
+                  src="/bulletins/0607/bulletin-0607-page2.jpg" 
                   alt="Worship Bulletin Inside Service" 
                   className="w-full h-auto transition-transform duration-700 group-hover:scale-[1.02]"
                 />

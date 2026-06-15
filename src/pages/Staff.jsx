@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import pastorJun from '../assets/pastor-jun.jpg';
 
 const Staff = () => {
   return (
@@ -14,37 +13,6 @@ const Staff = () => {
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mt-2">Our Staff</h1>
         </div>
 
-        {/* Pastor Jun - Featured */}
-        <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 mb-16">
-          <div className="md:flex items-stretch">
-            <div className="md:w-1/3 bg-gray-50 flex items-center justify-center p-4 md:p-8">
-              <div className="w-full max-w-[280px] aspect-[3/4] rounded-2xl overflow-hidden shadow-lg">
-                <img 
-                  src={pastorJun} 
-                  alt="Pastor JunGyu Park" 
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-            </div>
-            <div className="md:w-2/3 p-8 md:p-14 flex flex-col justify-center">
-              <div className="mb-8">
-                <span className="text-umc-red font-bold tracking-widest text-sm uppercase">Pastor</span>
-                <h2 className="text-4xl font-extrabold text-gray-900 mt-2 leading-tight">JunGyu "Jun" Park</h2>
-              </div>
-              <div className="space-y-6 text-lg text-gray-600 leading-relaxed font-light">
-                <p>
-                  <strong className="font-semibold text-gray-900">JunGyu Park</strong> was born and raised in South Korea. He holds a B.Th. from Methodist Theological University in Seoul and is currently pursuing an M.Div. from Drew Theological School.
-                </p>
-                <p>
-                  Since 2021, he has been serving as a student intern and youth pastor at Wesley UMC in Edison. He is passionate about sharing the love of God and building a community where everyone feels they belong.
-                </p>
-                <p>
-                  In his free time, he enjoys playing the bass and acoustic guitar, skiing, and hiking. He also loves making drip coffee and uses his media skills to help people connect with God.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* Other Staff Members */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

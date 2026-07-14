@@ -166,43 +166,6 @@ const Home = () => {
           </Link>
         </div>
       </section>
-
-      {/* Worship Bulletin Section */}
-      <section className="py-16 bg-gray-50 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-umc-red/5 rounded-full blur-[100px]"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-10">
-            <span className="text-umc-red font-black tracking-[0.2em] text-xs uppercase mb-4 block">Weekly Update</span>
-            <h2 className="text-5xl md:text-7xl font-black text-gray-900 mb-6 tracking-tight">Worship Bulletin</h2>
-            <p className="text-xl text-gray-600 font-medium max-w-2xl mx-auto mb-6">Follow along with our service. Digital version updated every week.</p>
-          </div>
-
-          <div className="max-w-4xl mx-auto space-y-16">
-            <div className="group bg-white p-4 sm:p-6 rounded-[3rem] shadow-2xl shadow-black/5 hover:shadow-black/10 transition-all duration-500 hover:-translate-y-2">
-              <div className="rounded-[2.2rem] overflow-hidden border border-gray-100 bg-gray-50 relative">
-                <img 
-                  src="/bulletins/0614/bulletin-0614-page1.jpg" 
-                  alt="Worship Bulletin Outside Cover" 
-                  className="w-full h-auto transition-transform duration-700 group-hover:scale-[1.02]"
-                />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500 pointer-events-none"></div>
-              </div>
-            </div>
-
-            <div className="group bg-white p-4 sm:p-6 rounded-[3rem] shadow-2xl shadow-black/5 hover:shadow-black/10 transition-all duration-500 hover:-translate-y-2">
-              <div className="rounded-[2.2rem] overflow-hidden border border-gray-100 bg-gray-50 relative">
-                <img 
-                  src="/bulletins/0614/bulletin-0614-page2.jpg" 
-                  alt="Worship Bulletin Inside Service" 
-                  className="w-full h-auto transition-transform duration-700 group-hover:scale-[1.02]"
-                />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500 pointer-events-none"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Location Map Section - Full Width */}
       <section className="w-full h-[500px] relative mt-12 bg-gray-100 grayscale hover:grayscale-0 transition-all duration-1000">
         <iframe 

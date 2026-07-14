@@ -28,7 +28,7 @@ const PrayerRequest = () => {
           
           <div className="p-8 md:p-12">
             <form 
-              action="https://formsubmit.co/pastorjun2025@gmail.com" 
+              action="https://formsubmit.co/choibh4206@gmail.com" 
               method="POST" 
               className="space-y-8"
             >

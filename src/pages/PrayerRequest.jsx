@@ -111,7 +111,7 @@ const PrayerRequest = () => {
               </div>
               
               <p className="text-center text-sm text-gray-500 mt-4">
-                Your request will be securely sent directly to pastorjun2025@gmail.com
+                Your request will be securely sent directly to choibh4206@gmail.com
               </p>
             </form>
           </div>
